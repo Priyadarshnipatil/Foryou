@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Valentine Quiz 💖</title>
 
 <style>
@@ -131,6 +132,168 @@ body {
     color: white;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices (320px - 480px) */
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    .quiz-box {
+        padding: 50px 30px;
+        margin: 30px 15px;
+        max-width: 100%;
+        width: calc(100% - 30px);
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .quiz-box h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    .quiz-box p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    .timer {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .option,
+    .start-btn {
+        padding: 18px;
+        font-size: 17px;
+        min-height: 55px;
+    }
+
+    #options {
+        gap: 15px;
+    }
+
+    .popup-content {
+        padding: 30px;
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .popup-content h3 {
+        font-size: 22px;
+    }
+
+    .popup-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .popup-content button {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Small Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .quiz-box {
+        padding: 25px 20px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .quiz-box h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .quiz-box p {
+        font-size: 15px;
+    }
+
+    .option,
+    .start-btn {
+        padding: 13px;
+        font-size: 15px;
+        min-height: 45px;
+    }
+
+    .popup-content {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+/* Medium Tablets and Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .quiz-box {
+        max-width: 500px;
+        padding: 30px;
+    }
+
+    .option,
+    .start-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+/* Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+    .quiz-box {
+        max-width: 520px;
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    .quiz-box {
+        margin: 10px 0;
+    }
+
+    .quiz-box h2 {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .quiz-box p {
+        margin-bottom: 12px;
+        font-size: 13px;
+    }
+
+    .timer {
+        font-size: 13px;
+    }
+
+    .option,
+    .start-btn {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    #options {
+        gap: 8px;
+    }
 }
 </style>
 </head>
